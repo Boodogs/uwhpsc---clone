@@ -1,4 +1,3 @@
-
 .. _versioncontrol:
 
 =============================================================
@@ -50,7 +49,7 @@ Advantages include:
    reader of your paper wants to know exactly what parameter choices you
    made to get a certain set of results.   This is an important aspect of
    doing *reproducible research*, as should be required in science.  (See
-   Section :ref:`repro_research`).  If nothing else you can save yourself
+   Section :ref:`reproducibility`).  If nothing else you can save yourself
    hours of headaches down the road trying to figure out how you got your
    own results.
 
