@@ -1,4 +1,3 @@
-
 .. _poisson:
 
 ==============================================================
@@ -114,7 +113,7 @@ With this lattice random walk we do not expect the approximate solution to
 converge to the true solution of the PDE, as the number of trials increases.
 Instead we expect it to converge to the solution of the linear system
 determined by the finite difference method described above.
-In other words if we choose :math:`(x_0,y_0) = (x_i, y_j)$ for some grid
+In other words if we choose :math:`(x_0,y_0) = (x_i, y_j)` for some grid
 point :math:`(i,j)` then we expect the Monte Carlo solution to converge to
 :math:`U_{ij}` rather than to :math:`u(x_i,y_j)`.
 
