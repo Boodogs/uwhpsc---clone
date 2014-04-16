@@ -18,7 +18,7 @@ There will be 4 homeworks during the quarter with
 tentative due dates listed below:
 
  * :ref:`homework1`: Thursday of Week 2, April 10  
- * Homework 2: Thursday of Week 4, April 24
+ * :ref:`homework2`: Thursday of Week 4, April 24
  * Homework 3: Thursday of Week 6, May 8 
  * Homework 4: Thursday of Week 8, May 22
  * Final Project: Wednesday of Week 11, June 11
