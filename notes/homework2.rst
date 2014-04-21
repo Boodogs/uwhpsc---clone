@@ -6,7 +6,7 @@ Homework 2 [2014]
 ==========================================
 
 
-.. comment:: Not yet finalized -- may change.
+.. warning:: Assignment modified in Part 9.
 
 Due Thursday, April 24, 2014, by 11:00pm PDT.
 See below for how to submit.
@@ -211,12 +211,17 @@ links they point to.  In particular, the following sections are relevant:
     students.)
 
     Add another file `sinetaylor.f90` that computes the approximation to the 
-    sine function, as you did in the Python version.  Add this to the
-    Makefile so that ::
+    sine function, as you did in the Python version.  
+    
+    .. warning:: Assignment modified here:
+
+    Also create a new main program `taylor_main2.f90`
+    that calls this subroutine.  Add these to the *same* Makefile so that ::
 
         $ make sine_output.txt
 
-    gives something sensible.
+    gives something sensible and `make exp_output.txt` still gives the
+    previous results.
 
 
 #.  **Only 583 students need to do this part**
@@ -246,6 +251,7 @@ To submit
 
   583 students should also have the files
 
+  * `$MYHPSC/homework2/taylor_main2.f90`
   * `$MYHPSC/homework2/sinetaylor.f90`
   * `$MYHPSC/homework2/plot_taylor.py`
     
