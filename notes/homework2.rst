@@ -147,7 +147,7 @@ links they point to.  In particular, the following sections are relevant:
         + \cdots`
 
     Note that the degree 5 and 6 approximations only have three nonzero terms, 
-    the degree 7 and 8 approximations have 5 nonzero terms, etc.  
+    the degree 7 and 8 approximations have four nonzero terms, etc.  
 
     You should get results like::
 
