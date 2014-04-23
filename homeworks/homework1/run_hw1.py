@@ -32,7 +32,7 @@ print "a = %g,  b = %g,  c = %g" % (a,b,c)
 print "The roots are: "
 if y0 == 0:
     print "   z0 = %g" % x0
-    print "   z0 = %g" % x1
+    print "   z1 = %g" % x1
 else:    
     print "   z0 = %g + %gj" % (x0,y0)
     print "   z1 = %g + %gj" % (x1,y1)

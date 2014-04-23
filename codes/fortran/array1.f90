@@ -22,7 +22,7 @@ program array1
     ! multiply A*x to get b:
     do i=1,m
         b(i) = 0.
-        do j=1,m
+        do j=1,n
             b(i) = b(i) + A(i,j)*x(j)
             enddo
         enddo

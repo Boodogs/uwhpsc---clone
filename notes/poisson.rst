@@ -1,4 +1,3 @@
-
 .. _poisson:
 
 ==============================================================
@@ -13,9 +12,9 @@ The steady state diffusion equation gives rise to a *Poisson problem*
 where :math:`f(x,y)` is the source term.  In the simplest case 
 :math:`f(x,y) = 0` this reduces to *Laplace's equation*.
 This must be augmented with boundary conditions around the edge of some
-two-dimensional region.  *Dirchlet boundary conditions* consist of
+two-dimensional region.  *Dirichlet boundary conditions* consist of
 specifying the solution :math:`u(x,y)` at all points around the boundary. 
-*Neumann boundary conditions* consist of specifying the normal dirivative
+*Neumann boundary conditions* consist of specifying the normal derivative
 (i.e. the direction derivative of the solution in the direction orthogonal
 to the boundary) and are used in physical situations where the if the flux of 
 heat or the diffused quantity is known along the boundary rather than the
@@ -42,7 +41,7 @@ nonzero entries.
 If the boundary data varies smoothly around the boundary then it can be
 shown that solving this linear system gives an approximate solution 
 of the partial differential equation that is :math:`{\cal O}(h^2)` accurate
-each each point.  There are many books that contain much 
+at each point.  There are many books that contain much 
 more about the development and analysis of such finite difference methods. 
 
 .. _poisson_iter:
@@ -51,7 +50,7 @@ Iterative methods for the Poisson problem
 -----------------------------------------
 
 Simple iterative methods such as Jacobi, Gauss-Siedel, and Successive
-Over-Relaxation (SOR) are discussed in the lectures and used a examples for
+Over-Relaxation (SOR) are discussed in the lectures and used as examples for
 implementations in OpenMP and MPI.  For three implementation of Jacobi in
 one space dimension, see
 
@@ -59,7 +58,7 @@ one space dimension, see
 * :ref:`jacobi1d_omp2`
 * :ref:`jacobi1d_mpi`
 
-For a sample implementation of Jacobi in two space dimensions can be found
+A sample implementation of Jacobi in two space dimensions can be found
 in `$UWHPSC/lectures/lecture1`.
 
 
@@ -88,10 +87,11 @@ there is a source term.
 A random walk starting at some point :math:`(x_0,y_0)` wanders randomly in
 the domain until it hits the boundary at some point.  We do this many times
 over and keep track of the boundary value given for :math:`u(x,y)` at the
-point where each walk hits the boundary.  It can be shown that if we do for
+point where each walk hits the boundary.  It can be shown that if we
+do this for
 a large number of walks and average the results, this converges to the
 desired solution value :math:`u(x_0,y_0)`.  Note that we expect more walks
-to to hit the boundary at parts of the boundary near :math:`(x_0,y_0)` than
+to hit the boundary at parts of the boundary near :math:`(x_0,y_0)` than
 at points further away, so the boundary conditions at such points will have
 more influence on the solution.  This is intuitively what we expect for a
 steady state solution of a diffusion or heat conduction problem.
@@ -114,13 +114,13 @@ With this lattice random walk we do not expect the approximate solution to
 converge to the true solution of the PDE, as the number of trials increases.
 Instead we expect it to converge to the solution of the linear system
 determined by the finite difference method described above.
-In other words if we choose :math:`(x_0,y_0) = (x_i, y_j)$ for some grid
+In other words if we choose :math:`(x_0,y_0) = (x_i, y_j)` for some grid
 point :math:`(i,j)` then we expect the Monte Carlo solution to converge to
 :math:`U_{ij}` rather than to :math:`u(x_i,y_j)`.
 
 **Why does this work?**  Here's one way to think about it.  Suppose doing this
-random walk starting at :math:`u(x_i,y_j)` converges to some value :math:`E_{ij}`,
-the expected value of u at the boundary hit when starting a random walk at this
+random walk starting at :math:`(x_i,y_j)` converges to some value :math:`E_{ij}`,
+the expected value of :math:`u` at the boundary hit when starting a random walk at this
 point.  If :math:`(x_i,y_j)` is one of the boundary points then 
 :math:`E_{ij} = U_{ij}` since we immediately hit the boundary with zero
 steps, so every random walk starting at this point returns :math:`u` at this
