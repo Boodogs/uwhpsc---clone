@@ -8,3 +8,7 @@ Notes to accompany lab sessions
    :maxdepth: 2
 
    lab1
+   lab8
+   lab9
+
+See also the codes in `$UWHPSC/labs`.
