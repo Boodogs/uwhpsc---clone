@@ -60,9 +60,12 @@ but the other root has a large relative error (few digits of accuracy).
 
 Figure out why "catastrophic cancellation" is the problem.
 
-Improvement
------------
+Improvements
+------------
 
-Improve the code by noticing that if one root is calculated accurately, the
-other root can be calculated from the fact that `x1 * x2 = c`.
+* Improve the code by noticing that if one root is calculated accurately, the
+  other root can be calculated from the fact that `x1 * x2 = c`.
+
+* Remove the assumption that `x1true <= x2true`.
+
 
