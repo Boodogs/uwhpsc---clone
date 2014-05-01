@@ -6,6 +6,10 @@
 ! to increase the allowed stack size.
 ! This may not work on all computers.  On a Mac the best you can do is
 !   $ ulimit -s hard
+! Correction... you can do the following on a Mac:
+!   $ gfortran -fopenmp -Wl,-stack_size,2faf2000 yeval.f90 
+! here 2faf2000 is a hexadecimal number slightly larger than 8e8, the 
+! number of bytes needed for the value of n used in this program.
 
 
 program yeval
