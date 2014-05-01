@@ -189,8 +189,5 @@ To submit
 
 * Submit the commit number that you want graded by following the link
   provided on the `Canvas page for Homework 3
-  <https://canvas.uw.edu/courses/893991/wiki/homework-3>`_.
-  If you submit the wrong thing or make further changes to your work
-  before the due date, you can simply resubmit new information at the same
-  link.
+  <https://canvas.uw.edu/courses/893991/assignments/2504886>`_.
 
