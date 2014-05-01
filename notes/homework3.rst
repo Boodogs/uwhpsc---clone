@@ -105,6 +105,13 @@ Assignment
    Note that `nsamples` is also read in from `input_data.txt` and a 
    default value is specified in the Makefile.
 
+   You will need to determine the size of the matrix `a` passed into to the
+   subroutine since that is not an explicit argument.  For this you can
+   use::
+
+        n = size(a,1)   ! number of rows in a
+
+
 #. Change the `Makefile` so that it compiles with the `-fopenmp` flag and
    add OpenMP directives to the main program so that the loop on `j` for
    computing the true 1-norm is a parallel do loop.  Think about what variables
