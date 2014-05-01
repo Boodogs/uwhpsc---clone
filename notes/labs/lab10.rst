@@ -45,3 +45,4 @@ Work on this in groups!
         :math:`\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}6.`
 
 
+#.  There is a quiz for this lab.
