@@ -90,8 +90,8 @@ Assignment
         ./test.exe
          seed1 for random number generator:       10101
          seed1 for random number generator:       12345
-        Using matrix with n =    50   True 1-norm:          30.049035
-        Based on   1000 samples, Approximate 1-norm:        25.816555
+        Using matrix with n =    50   True 1-norm:          28.091553
+        Based on   1000 samples, Approximate 1-norm:        24.998100
 
    Note that the approximation to the 1-norm should always be less than
    or equal to the true 1-norm, since in the program you are only computing
@@ -127,10 +127,9 @@ Assignment
        Wrote data to input_data.txt
        ./test.exe
         nthreads =            4
-        seed1 for random number generator:       10101
         seed1 for random number generator:       12345
-        Using matrix with n =    50   True 1-norm:          30.049035
-        Based on   1000 samples, Approximate 1-norm:        25.816555
+       Using matrix with n =    50   True 1-norm:          28.091553
+       Based on   1000 samples, Approximate 1-norm:        24.998100
 
     
 #. Parallelize `approx_norm1` using OpenMP.  
@@ -148,6 +147,10 @@ Assignment
    approach.  Handle this parameter similar to the other input data, with
    a default value in the Makefile, and with `main.f90` reading it in from
    the file `input_data.txt`.
+
+   Add `method` as a module variable to `approx_norm.f90` in order to pass
+   the value from the main routine into the subroutine.  Do not change the
+   calling sequence of the subroutine.
 
 #. (You don't need to turn anything in for this part since timing parallel
    codes can be dicey on some machines.)
