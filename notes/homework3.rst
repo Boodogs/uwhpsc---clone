@@ -88,7 +88,6 @@ Assignment
 
         Wrote data to input_data.txt
         ./test.exe
-         seed1 for random number generator:       10101
          seed1 for random number generator:       12345
         Using matrix with n =    50   True 1-norm:          28.091553
         Based on   1000 samples, Approximate 1-norm:        24.998100
