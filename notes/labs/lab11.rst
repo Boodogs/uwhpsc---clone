@@ -13,7 +13,8 @@ Lab 11: Tuesday May 6, 2014
    * `$UWHPSC/2013/homeworks`
    * `$UWHPSC/2013/solutions`
     
-* Discussion of random number generators
+* Discussion of random number generators.
+  See `UWHPSC/labs/lab11`
 * Questions about OpenMP?
 
 Programming problem
