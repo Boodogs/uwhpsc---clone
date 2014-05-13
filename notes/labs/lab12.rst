@@ -2,7 +2,7 @@
 
 .. _lab12:
 
-Lab 12: Tuesday May 8, 2014
+Lab 12: Thursday May 8, 2014
 =============================
 
 
@@ -60,3 +60,5 @@ Work on this in groups!
    to use two threads on this problem.
 
 #. There is a quiz for this lab.
+
+#. Sample solutions can now be found in `$UWHPSC/labs/lab12`.
