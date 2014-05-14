@@ -20,7 +20,7 @@ Demos
 
 * IPython 2.0 with interactive widgets:
 
-  The notebook in `$UWHPSC/codes/python/lab12a.ipynb` illustrates this.
+  The notebook in `$UWHPSC/codes/python/widgets_demo.ipynb` illustrates this.
   (Does not run on SMC.)
 
 
@@ -35,3 +35,5 @@ Gamblers' Ruin problem
 * The notebook `$UWHPSC/codes/python/GamblersRuin.ipynb`
   illustrates in Python a problem that you will tackle in Homework 4
   using Fortran with OpenMP and MPI.
+
+**There is a quiz for Lab 13**
