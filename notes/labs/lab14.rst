@@ -1,0 +1,21 @@
+
+
+.. _lab14:
+
+Lab 14: Thursday May 15, 2014
+=============================
+
+  
+
+Demos
+-----
+
+* Python dictionaries: `$UWHPSC/labs/lab14/dictionary_demo.ipynb`
+  illustrates this.
+
+* Towers of Hanoi: `$UWHPSC/labs/lab14/Towers_of_Hanoi.ipynb`
+  illustrates this.
+
+
+
+**There is a quiz for Lab 14**

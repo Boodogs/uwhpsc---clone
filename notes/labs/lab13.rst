@@ -20,19 +20,19 @@ Demos
 
 * IPython 2.0 with interactive widgets:
 
-  The notebook in `$UWHPSC/codes/python/widgets_demo.ipynb` illustrates this.
+  The notebook in `$UWHPSC/labs/lab13/widgets_demo.ipynb` illustrates this.
   (Does not run on SMC.)
 
 
 * Plots you can zoom in on in IPython notebooks:
   `mpld3 <https://github.com/jakevdp/mpld3>`_.
-  The notebook `$UWHPSC/codes/python/mpld3_demo.ipynb`
+  The notebook `$UWHPSC/labs/lab13/mpld3_demo.ipynb`
   can be run on SMC.
 
 Gamblers' Ruin problem
 ----------------------
 
-* The notebook `$UWHPSC/codes/python/GamblersRuin.ipynb`
+* The notebook `$UWHPSC/labs/lab13/GamblersRuin.ipynb`
   illustrates in Python a problem that you will tackle in Homework 4
   using Fortran with OpenMP and MPI.
 
