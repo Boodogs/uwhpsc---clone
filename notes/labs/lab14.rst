@@ -16,6 +16,8 @@ Demos
 * Towers of Hanoi: `$UWHPSC/labs/lab14/Towers_of_Hanoi.ipynb`
   illustrates this.
 
+* One solution to the lab problem: `$UWHPSC/labs/lab14/Towers_of_Hanoi_plots.ipynb`
+
 
 
 **There is a quiz for Lab 14**
