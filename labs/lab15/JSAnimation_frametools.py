@@ -8,7 +8,6 @@ import glob
 from matplotlib import image, animation
 from matplotlib import pyplot as plt
 from JSAnimation import IPython_display
-from pylab import draw, savefig
 
 def make_plotdir(plotdir='_plots', clobber=True):
     """
@@ -35,9 +34,9 @@ def save_frame(frameno, plotdir='_plots', fname_base='frame', verbose=False):
     the appropriate file name such as _plots/frame00001.png.
     """
 
-    draw()
+    plt.draw()
     filename = '_plots/%s%s.png' % (fname_base, str(frameno).zfill(5))
-    savefig(filename)
+    plt.savefig(filename)
     if verbose:
         print "Saved ",filename
 
