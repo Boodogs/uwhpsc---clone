@@ -92,6 +92,7 @@ Python
    sage
    python_plotting
    python_debugging
+   animation
 
 .. _toc_fortran:
 
