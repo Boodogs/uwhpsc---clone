@@ -22,6 +22,8 @@ Demos
   View at
   `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/WavePacket.ipynb>`_
 
+* `$UWHPSC/labs/lab15/WavePacket.py`  Script version
+  
 * `$UWHPSC/labs/lab15/Towers_of_Hanoi_animation.ipynb`
 
   View at
