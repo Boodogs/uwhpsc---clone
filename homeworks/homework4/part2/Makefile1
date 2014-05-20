@@ -1,5 +1,5 @@
 
-OBJECTS = random_util.o gamblers_r_array.o main1.o
+OBJECTS = random_util.o gamblers.o main1.o
 #FFLAGS = -g -Wall -fbounds-check -ffpe-trap=zero,overflow,underflow,invalid 
 
 .PHONY: data test1 clean 
