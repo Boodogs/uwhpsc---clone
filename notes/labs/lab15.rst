@@ -13,9 +13,19 @@ Demos
 
 * `$UWHPSC/labs/lab15/JSAnimation_demo.ipynb`
 
+  View at
+  `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/JSAnimation_demo.ipynb>`_
+
+
 * `$UWHPSC/labs/lab15/WavePacket.ipynb`
 
-* `$UWHPSC/labs/lab15/Animate_towers.ipynb`
+  View at
+  `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/WavePacket.ipynb>`_
+
+* `$UWHPSC/labs/lab15/Towers_of_Hanoi_animation.ipynb`
+
+  View at
+  `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/Towers_of_Hanoi_animation.ipynb>`_
 
 Note: These use `$UWHPSC/labs/lab15/JSAnimation_frametools.py`.
 
