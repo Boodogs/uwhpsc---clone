@@ -43,7 +43,7 @@ links they point to.  In particular, the following sections are relevant:
 
     There will be a quiz on this paper to complete as part of the homework
     assignment.  This quiz can be found on the Canvas page
-    `Homework 3 quiz <https://canvas.uw.edu/courses/893991/quizzes/779589>`_.
+    `Homework 2 quiz <https://canvas.uw.edu/courses/893991/quizzes/779589>`_.
 
 #. **Survey assignment**
 
