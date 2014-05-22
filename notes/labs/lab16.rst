@@ -29,7 +29,9 @@ Problem to solve
 * Instead of using the `random_number` subroutine to generate a random `x` for checking the
   relative error, as is done in `$UWHPSC/codes/lapack/randomsys3.f90`, try taking `x` to be 
   a vector of all 1's.  (And as in the original code compute :math:`b = Ax` usint `matmul` and
-  then solve the system to recover `x`.  How well does it do?)
+  then solve the system to recover `x`.)  Print out the computed `x` as well as computing the
+  relative error in the 1-norm as in the original code.  How well does it do?  How does the
+  accuracy relate to the condition number?
 
 * You might want to look at the `dgecon documentation
   <http://www.netlib.no/netlib/lapack/double/dgecon.f>`_.
