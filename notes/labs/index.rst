@@ -17,5 +17,6 @@ Notes to accompany lab sessions
    lab14
    lab15
    lab16
+   lab17
 
 See also the codes in `$UWHPSC/labs`.

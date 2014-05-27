@@ -2,7 +2,7 @@
 
 .. _lab16:
 
-Lab 16: Tuesday May 22, 2014
+Lab 16: Thursday May 22, 2014
 =============================
 
 
@@ -72,4 +72,4 @@ Problem to solve
   <http://www.netlib.no/netlib/lapack/double/dgetrf.f>`_.
 
 
-**There is quiz for Lab 15**
+**There is quiz for Lab 16**
