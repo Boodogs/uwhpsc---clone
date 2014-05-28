@@ -20,6 +20,7 @@ program tridiag
     ! or it also works if you declare b(n) to be 1-dimensional, and then use:
     ! b = (/201.d0, 312.d0, 423.d0, 534.d0, 45.d0 /)
 
+    ldb = n
     call dgtsv(n, nrhs, dl, d, du, b, ldb, info)
 
     ! on return, b is the solution:
