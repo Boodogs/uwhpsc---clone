@@ -21,7 +21,15 @@ program tridiag
     ! b = (/201.d0, 312.d0, 423.d0, 534.d0, 45.d0 /)
 
     ldb = n
+    nrhs = 1
+
+    ! solve the system:
     call dgtsv(n, nrhs, dl, d, du, b, ldb, info)
+
+    if (info /= 0) then
+        print *, "*** Problem with solver, info = ",info
+        stop
+        endif
 
     ! on return, b is the solution:
     print *, 'x = ', b
