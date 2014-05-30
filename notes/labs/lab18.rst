@@ -6,14 +6,15 @@ Lab 18: Thursday May 29, 2014
 =============================
 
 
-* Go through the notebook `$UWHPSC/homeworks/project/BVP.ipynb`, also 
+* We will go through the notebook `$UWHPSC/homeworks/project/BVP.ipynb`, also 
   visible at
   `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/BVP.ipynb>`_.
-  This outlines a recursive domain decomposition approach to solving a
+  This outlines a recursive `domain decomposition
+  <https://www.google.com/search?q=domain+decomposition&rlz=1C5CHFA_enUS534US534&espv=2&source=lnms&tbm=isch&sa=X&ei=R4GHU4uFKI-XyAT4t4Bo&ved=0CAYQ_AUoAQ&biw=1440&bih=779>`_  approach to solving a
   boundary value problem.  Part 1 of the project is to convert this into
   Fortran with OpenMP.
    
-* Work in pairs, copy this notebook to `BVP2.ipynb` and modify it to solve
+* Working in pairs, copy this notebook to `BVP2.ipynb` and modify it to solve
   a `Helmholtz equation <http://en.wikipedia.org/wiki/Helmholtz_equation>`_
   (in one dimension) of the form:
 
@@ -66,4 +67,9 @@ Lab 18: Thursday May 29, 2014
     the equation for the mismatch to take into account the modification to
     the linear system being solved.
 
+* There is now a sample solution in the repository, visible at
+  `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/BVP_helmholtz.ipynb>`_.
+
 * **There is quiz for Lab 18**
+
+
