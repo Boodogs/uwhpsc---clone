@@ -5,8 +5,6 @@
 Final Project [2014]
 ==========================================
 
-.. warning:: Incomplete, more to be added.
-
 Due Wednesday, June 11, 2014, by 11:00pm PDT.
 
 Some resources:
@@ -201,6 +199,87 @@ suitable).  We might do the same to test your routines.
          error_max =   1.73004366388340713E-008
 
 
+**Part 2**
+
+In Lab 19 the heat equation will be discussed along with an IPython
+notebook illustrating how solutions behave and two numerical methods for
+approximating the solution.
+
+For simplicity, we are only considering a special case of the
+one-dimensional heat equation :math:`u_t(x,t) = u_{xx}(x,t)` in
+which the problem is solved on the interval :math:`0 < x < \pi`,
+the boundary conditions are :math:`u(0,t) = u(\pi,t) = 0` for all
+:math:`t`, and the initial data is a sine wave of the form `u_0(x)
+= \sin(kx)` for some integer `k`.  You might want to experiment
+with initial data that is a linear combination of different "Fourier
+modes", as illustrated in the notebook.
+
+The directory `$UWHPSC/homeworks/project/part2` contains some files that
+implement the explicit method discussed in class.  You can do, for example::
+
+    $ make test -f Makefile1 
+
+and you can vary `n, k, tfinal,` and `nsteps` by specifying at the command
+line, e.g. ::
+
+    $ make test -f Makefile1 n=100 k=5 nsteps=500
+
+The main program prints out the max-norm error at the final time and also
+produces a file `solution.txt` that contains the approximate and true solution at
+the final time.
+
+#. Add a second subroutine to the file `heat_solvers.f90` that implements the
+   implicit Crank-Nicolson method that will be discussed in Lab 19.
+   Name this subroutine `solve_heat_implicit` and it should have the same calling
+   sequence as the `solve_heat_explicit`.  
+
+   Add a parameter `method` to `main1.f90` so that if `method==1` then the 
+   explicit method is used and if `method==2` then the implicit method is used.
+   Add this also to `Makefile1` so that a value is written to `input_data.txt`
+   and then read by the main program, similar to the other parameters.
+   (You can give it the default value 1).
+   Note that the two methods do not give the same approximate solution (or
+   error), but test that both give results that agree with the IPython notebook.
+
+   To implement this method, you will have to solve a tridiagonal system of
+   equations every time step.  You can use the LAPACK routine `dgtsv` (or `dptsv`
+   if you prefer).  Note that either of these routines overwrites the input
+   arrays that describe the matrix with the LU factorization, so be careful if 
+   you are using this in a loop where you have more than one system to solve!
+
+#. Create a new main program `main2.f90` based on your modified `main1.f90` that
+   outputs the solution at every time step to a file `frames.txt`.  Use the same
+   format as currently used to write to `solution.txt`, but add to the file every
+   time step, and also write the initial data before starting to solve the
+   problem.  So after running the code the file `frames.txt` should have
+   `(nsteps+1)*(n+2)` lines (since each `u` solution vector has `n+2` elements).
+
+   Do not modify the subroutines in `heat_solvers.f90` to do this.  Instead,
+   have a loop in the main program that calls `solve_heat_explicit` or
+   `solve_heat_implicit` repeatedly, `nsteps` times, taking a single time step
+   with each call and then writing the solution before the next call.
+
+#. Write a Python script that reads `n` and `nsteps` from `input_data.txt` and 
+   reads all the solutions from `frames.txt` and produces an animation in a file 
+   `heat.html`.  Use `JSAnimation` and the `JSAnimation_frametools.py` module
+   from Lab 15. 
+
+   In Lab 20 we will look at an example of doing this for a different
+   problem, so if you're not sure how to do it, take a look at that Lab.
+
+   Create a `Makefile2` with a phony target `movie` so that you can do, for example,
+
+        $ make movie -f Makefile2  k=4 n=50 nsteps=40 method=1
+
+        $ make movie -f Makefile2  k=4 n=50 nsteps=40 method=2
+
+   and create the animations shown at 
+
+   * `<http://faculty.washington.edu/rjl/heat_explicit.html>`_
+   * `<http://faculty.washington.edu/rjl/heat_implicit.html>`_
+
+   illustrating that the implicit method is more stable.
+
 
 
              
@@ -223,17 +302,24 @@ To submit
 
   **Part 2**
 
-  * To appear.
+  * `$MYHPSC/project/part2/problem.f90`  (unchanged from original)
+  * `$MYHPSC/project/part2/Makefile1`  
+  * `$MYHPSC/project/part2/main1.f90`  
+  * `$MYHPSC/project/part2/heat_solvers.f90`  
+  * `$MYHPSC/project/part2/Makefile2`  
+  * `$MYHPSC/project/part2/main2.f90`  
 
-  **Please be sure you have the specified directory and file names.**
+
+* **Please be sure you have the specified directory and file names.**
   It is hard to grade otherwise, and points will be deducted.
   
 
-  Make sure you push to bitbucket after committing.
+* Make sure you push to bitbucket after committing.
 
 * Submit the commit number that you want graded by following the link
   provided on the `Canvas page for the project
   <https://canvas.uw.edu/courses/893991/assignments/2520179>`_.
 
 * There will also be a survey (to appear) worth 10 points.
+  Check back for the link!
 

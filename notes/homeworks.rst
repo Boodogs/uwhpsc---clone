@@ -20,7 +20,7 @@ tentative due dates listed below:
  * :ref:`homework1`: Thursday of Week 2, April 10  
  * :ref:`homework2`: Thursday of Week 4, April 24
  * :ref:`homework3`: Thursday of Week 6, May 8 -- :ref:`homework3_solution`
- * :ref:`homework4`: Tuesday of Week 9, May 27
+ * :ref:`homework4`: Tuesday of Week 9, May 27 -- :ref:`homework4_solution`
  * :ref:`project`: Wednesday of Week 11, June 11
 
 There will be a "final project" tentatively due on Wednesday, June 11.  

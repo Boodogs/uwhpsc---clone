@@ -17,9 +17,9 @@ in your ``.bashrc`` file, such as::
 
  alias gf="gfortran -Wall -Wextra -Wconversion -pedantic"
 
-`gfortran man page <http://linux.die.net/man/1/gfortran>` 
+See the `gfortran man page <http://linux.die.net/man/1/gfortran>`_
 for more information.  
-Note a ``man page'' is the Unix help manual documentation that is available
+Note a "man page" is the Unix help manual documentation that is available
 for many Unix commands by typing, e.g.::
 
     $ man gfortran
