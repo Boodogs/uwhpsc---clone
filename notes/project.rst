@@ -259,7 +259,8 @@ the final time.
    `solve_heat_implicit` repeatedly, `nsteps` times, taking a single time step
    with each call and then writing the solution before the next call.
 
-#. Write a Python script that reads `n` and `nsteps` from `input_data.txt` and 
+#. Write a Python script `animate.py`
+   that reads `n` and `nsteps` from `input_data.txt` and 
    reads all the solutions from `frames.txt` and produces an animation in a file 
    `heat.html`.  Use `JSAnimation` and the `JSAnimation_frametools.py` module
    from Lab 15. 
@@ -308,6 +309,9 @@ To submit
   * `$MYHPSC/project/part2/heat_solvers.f90`  
   * `$MYHPSC/project/part2/Makefile2`  
   * `$MYHPSC/project/part2/main2.f90`  
+  * `$MYHPSC/project/part2/animate.py`  (Script to create the animation) 
+  * `$MYHPSC/project/part2/JSAnimation_frametools.py`  (optional, unchanged from
+    original)
 
 
 * **Please be sure you have the specified directory and file names.**
