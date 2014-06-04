@@ -76,6 +76,9 @@ suitable).  We might do the same to test your routines.
       The `DPTSV` routine is slightly more efficient, but it's fine to
       use `DGTSV`.
 
+    **NOTE: The output below was created using `DPTSV` and if you use 
+    `DGTSV` slightly different results are obtained.**
+
     Add a print statement to your subroutine so that running the code
     produces output like this::
 
@@ -130,6 +133,16 @@ suitable).  We might do the same to test your routines.
 
     Printing out `G0, G1`, and `z` might be useful for debugging to compare
     with what the Python code produces.
+
+    **NOTE:** The split version gets slightly different results from the direct 
+    version, particularly for `n = 10000`.   This tridiagonal matrix has a 
+    condition number that grows like :math:`{\cal O}(n^2)`, and so for `n =
+    1e5`, perturbations in the way you do the linear algebra can make
+    be expected to make relative errors on the order of `1e10` times the 
+    machine roundoff, which is comparable to the error in the BVP solution that
+    is being computed. (This also suggests that making `n` even larger may
+    not give you a better approximation of the true solution, when computing
+    in finite precision arithmetic.)
 
 #.  Add another subroutine `solve_bvp_split_omp` to the `bvp_solvers` module
     that has the same calling sequence and produces the same result, but  
