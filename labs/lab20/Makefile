@@ -1,7 +1,7 @@
 
 OBJECTS = fourier_sum.f90
 
-.PHONY: data test clean movie
+.PHONY: data test clean movie clobber
 
 # default values for input_data.txt:
 
@@ -26,5 +26,8 @@ movie: test
 	python animate.py
 
 clean:
-	rm -f *.o *.exe *.mod
+	rm -f *.o *.exe *.mod *.pyc
 
+clobber: clean
+	rm -f xf.txt frames.txt FourierSum.html
+	rm -rf _plots

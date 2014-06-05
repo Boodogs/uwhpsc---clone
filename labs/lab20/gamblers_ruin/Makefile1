@@ -2,7 +2,7 @@
 OBJECTS = random_util.o gamblers.o main1.o
 #FFLAGS = -g -Wall -fbounds-check -ffpe-trap=zero,overflow,underflow,invalid 
 
-.PHONY: data test1 clean movie
+.PHONY: data test1 clean movie clobber
 
 # default values for input_data.txt:
 
@@ -36,3 +36,6 @@ movie: test1
 clean:
 	rm -f *.o *.exe *.mod
 
+clobber: clean
+	rm -f walk.txt RandomWalk.html
+	rm -rf _plots
