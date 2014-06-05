@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use('Agg')
+
 from pylab import *
 import JSAnimation_frametools as J
 
