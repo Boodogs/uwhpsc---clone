@@ -19,6 +19,10 @@ Lab 20: Thursday June 5, 2014
 
   We will go through these codes.
 
+* You may have to install JSAnimation on your SMC project, see
+  :ref:`animation`.
+
+
    
 Work on in pairs:
 ------------------

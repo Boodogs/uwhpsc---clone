@@ -16,6 +16,9 @@ Some resources:
   solution to the lab problem of solving a tridiagonal system in Fortran.
   See :ref:`lab17` for more links.
 
+* You may have to install JSAnimation on your SMC project, see
+  :ref:`animation`.
+
 
 **Part 1**
 
@@ -216,7 +219,7 @@ suitable).  We might do the same to test your routines.
 
 **Part 2**
 
-In Lab 19 the heat equation will be discussed along with an IPython
+In :ref:`lab19` the heat equation will be discussed along with an IPython
 notebook illustrating how solutions behave and two numerical methods for
 approximating the solution.
 
@@ -244,7 +247,7 @@ produces a file `solution.txt` that contains the approximate and true solution a
 the final time.
 
 #. Add a second subroutine to the file `heat_solvers.f90` that implements the
-   implicit Crank-Nicolson method that will be discussed in Lab 19.
+   implicit Crank-Nicolson method that will be discussed in :ref:`lab19`.
    Name this subroutine `solve_heat_implicit` and it should have the same calling
    sequence as the `solve_heat_explicit`.  
 
@@ -278,9 +281,9 @@ the final time.
    that reads `n` and `nsteps` from `input_data.txt` and 
    reads all the solutions from `frames.txt` and produces an animation in a file 
    `heat.html`.  Use `JSAnimation` and the `JSAnimation_frametools.py` module
-   from Lab 15. 
+   from :ref:`lab15`. 
 
-   In Lab 20 we will look at an example of doing this for a different
+   In :ref:`lab20` we will look at an example of doing this for a different
    problem, so if you're not sure how to do it, take a look at that Lab.
 
    Create a `Makefile2` with a phony target `movie` so that you can do, for example,
