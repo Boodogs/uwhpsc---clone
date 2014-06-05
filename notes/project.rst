@@ -7,6 +7,8 @@ Final Project [2014]
 
 Due Wednesday, June 11, 2014, by 11:00pm PDT.
 
+.. warning:: A survey link has been added at the end of this page.
+
 Some resources:
 
 * The notebook `$UWHPSC/lab17/Tridiagonal.ipynb` has a discussion of 
@@ -337,6 +339,25 @@ To submit
   provided on the `Canvas page for the project
   <https://canvas.uw.edu/courses/893991/assignments/2520179>`_.
 
-* There will also be a survey (to appear) worth 10 points.
-  Check back for the link!
+* Also take this `survey
+  <https://canvas.uw.edu/courses/893991/quizzes/782895>`_
+  worth 10 points.
+  
+  Before doing this survey, please first do the course evaluation. This
+  is being done on-line this year at the link
+  `<https://uw.iasystem.org/survey/128096>`_.
+  Anonymous results will be available to the instructor and TAs well after
+  the quarter has ended.
+
+* On-campus students:
+  UW Libraries and UW Information Technology want to know what students
+  think about the Active Learning Classrooms in Odegaard Library. Your
+  feedback will shape recommendations for new classrooms. Take their brief
+  survey here: `<https://catalyst.uw.edu/webq/survey/fournier/239147>`_.
+
+
+
+
+
+
 
