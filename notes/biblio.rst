@@ -66,6 +66,9 @@ Books
 .. [Overton-IEEE] M. Overton, *Numerical Computing with IEEE Floating Point
    Arithmetic*, SIAM, 2001.
 
+.. [Eijkhout] V. Eijkhout, *Introduction to High-Performance Scientific Computing*,
+   `[link to book and slides] <http://tacc-web.austin.utexas.edu/veijkhout/public_html/istc/istc.html>`_
+
 .. _other_courses:
 
 Other courses with useful slides or webpages

@@ -78,6 +78,10 @@ To view this png file (from outside the notebook) there are several options:
   repository on the SMC project and then add and commit 
   the file you want to transfer.  
 
+  Or if you open the *Files* tab on the SMC project page and navigate to the
+  directory containing the desired file, there is a set of buttons to the
+  left of each file name that includes a download button.
+
   You can also use `scp` to copy a file *from* the SMC to your account on
   some other machine, e.g. a UW computer.  In a terminal window on the SMC 
   project, type::
@@ -89,6 +93,34 @@ To view this png file (from outside the notebook) there are several options:
   You can put a directory path after the : in this command if you want to
   put it somewhere other than the home directory.
 
+  
+.. _smc_view_html:
+
+Viewing an html file
+--------------------
+
+If you create an html file on your computer (e.g. the animation `FourierSum.html`
+created by the code in `$UWHPSC/labs/lab20`) then if you simply use `open` at the
+command line or click on it in the File selector, the editor will open to the raw
+html text file.  
+
+To view it instead as a webpage in your browser, there are three options:
+
+* Download it to your computer and open it with a browser.  You can download
+  using one of the methods suggested above for `png` files.
+
+* View it in a browser window by navigating to the page
+  `https://cloud.sagemath.com/PROJECT-ID/raw/file.html`
+  where `PROJECT-ID` is replaced by the long string of numbers that appears
+  in the address bar when you're working on your project, e.g.
+  `0c7b8079-70bb-45ef-8554-53178fd7e447` and `file.html` is the
+  filename of the `html` file.  If the file is not in the top level of your
+  project directory structure, the full path must be used, .e.g. something like::
+
+    https://cloud.sagemath.com/0c7b8079-70bb-45ef-8554-53178fd7e447/raw/uwhpsc/labs/lab20/FourierSum.html
+
+* Transfer it by `scp` or some other means to a webserver, e.g. if you maintain
+  your own webpages and want to add this `html` file so that others can view it.
 
 Editing files
 -------------

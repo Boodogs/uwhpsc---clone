@@ -9,7 +9,7 @@ Due Wednesday, June 11, 2014, by 11:00pm PDT.
 
 .. warning:: A survey link has been added at the end of this page.
 
-Some resources:
+**Some resources:**
 
 * The notebook `$UWHPSC/lab17/Tridiagonal.ipynb` has a discussion of 
   tridiagonal matrices in Python, and `$UWHPSC/lab17/tridiag.f90` contains a
@@ -19,7 +19,10 @@ Some resources:
 * You may have to install JSAnimation on your SMC project, see
   :ref:`animation`.
 
+* For hints on viewing an html file created on SMC, see
+  :ref:`smc_view_html`. 
 
+* See :ref:`project_hints` for some more tips.
 **Part 1**
 
 The notebook `$UWHPSC/project/BVP.ipynb` illustrates
