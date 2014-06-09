@@ -44,4 +44,14 @@ Sample solutions can be found in `$UWHPSC/solutions/homework4`.
 
 **Some common errors that people made:**
 
-* To appear.
+**Part 1**
+
+* The most common error was blindly following the coarse grain
+  example and dividing up `n` instead of `n_samples` between threads.
+
+* Incorrect OpenMP reductions.
+
+**Part 2**
+
+* A variety of problems coding `main2f.90`.
+
