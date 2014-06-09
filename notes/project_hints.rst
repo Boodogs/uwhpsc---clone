@@ -45,6 +45,11 @@ Some hints on problems encountered in the :ref:`project`:
   executable files generated when compiling the program but `make clobber` also
   removes data or figures produced by running the code.
 
+* Remember that it's always a good idea to do `make clean -f Makefile_name`
+  before other make commands if you are switching from one Makefile to
+  another, since it might not check dependencies properly if the Makefile
+  itself changes.
+
 * In the Python notebook for the implicit heat equation solver, 
   sparse matrix notation is used to define the sparse identity matrix
   and the matrices :math:`A = I - \frac{\Delta t}{2} D_2` and
