@@ -9,23 +9,7 @@ Due Wednesday, June 11, 2014, by 11:00pm PDT.
 
 .. warning:: A survey link has been added at the end of this page.
 
-**Some resources:**
-
-* The notebook `$UWHPSC/labs/lab17/Tridiagonal.ipynb` has a discussion of 
-  tridiagonal matrices in Python, and `$UWHPSC/labs/lab17/tridiag.f90` contains a
-  solution to the lab problem of solving a tridiagonal system in Fortran.
-  See :ref:`lab17` for more links.
-
-* You may have to install JSAnimation on your SMC project, see
-  :ref:`animation`.
-
-* For hints on viewing an html file created on SMC, see
-  :ref:`smc_view_html`. 
-
-* See :ref:`homework3_solution` and :ref:`homework4_solution` for some 
-  pointers based on common errors on the these homeworks.
-
-* See :ref:`project_hints` for some more tips.  
+**Some resources and hints:**  See :ref:`project_hints`.  
 
 **Part 1**
 
