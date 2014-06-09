@@ -30,3 +30,7 @@ Some hints on problems encountered in the :ref:`project`:
   convention in Makefiles, that `make clean` removes things like object and 
   executable files generated when compiling the program but `make clobber` also
   removes data or figures produced by running the code.
+
+* Don't forget to use constants like `2.d0` in  Fortran rather than just `2`
+  in order to insure that double precision is used.
+
