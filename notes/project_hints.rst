@@ -7,7 +7,7 @@ Project Hints
 Some hints on problems encountered in the :ref:`project`:
 
 * See :ref:`homework3_solution` and :ref:`homework4_solution` for some 
-  pointers based on common errors on the these homeworks.
+  pointers based on common errors on these homeworks.
 
 * The notebook `$UWHPSC/labs/lab17/Tridiagonal.ipynb` has a discussion of 
   tridiagonal matrices in Python, and `$UWHPSC/labs/lab17/tridiag.f90` contains a
@@ -61,13 +61,20 @@ Some hints on problems encountered in the :ref:`project`:
   solver are for the 3 diagonals and you will want to figure out what the
   correct values to put in these are from the finite difference equations,
   
-  :math:`U_i^{N+1} = U_i^N +  \frac{\Delta t}{\Delta x^2} [(U_{i-1}^N -
+  :math:`U_i^{N+1} = U_i^N +  \frac{\Delta t}{2\Delta x^2} [(U_{i-1}^N -
   2U_i^N + U_{i+1}^N) + (U_{i-1}^{N+1} - 2U_i^{N+1} + U_{i+1}^{N+1})].`
 
   Recall that :math:`U_j^N` is known for all values of :math:`j`, 
   so all these terms go on the Right Hand Side, while the :math:`U_j^{N+1}` 
   terms all go on the left hand side and define the tridiagonal linear system 
   to be solved.  
+
+.. warning:: There was a missing factor of 2 in the denominator of the
+   fraction above, which has now been fixed. The same error appeared in 
+   the notebook `$UWHPSC/homeworks/project/Heat_Equation.ipynb`,
+   and has been fixed there and in the version visible at
+   `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/Heat_Equation.ipynb>`_.
+
 
 * Don't forget to use constants like `2.d0` in  Fortran rather than just `2`
   in order to insure that double precision is used.
