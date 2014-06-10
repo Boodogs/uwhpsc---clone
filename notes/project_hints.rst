@@ -15,7 +15,15 @@ Some hints on problems encountered in the :ref:`project`:
   See :ref:`lab17` for more links.
 
 * You may have to install JSAnimation on your SMC project, see
-  :ref:`animation`.
+  :ref:`animation`.  Note that this also gives hints on using it without
+  "installing".  
+
+* Some people using their own computers are having problems getting
+  JSAnimation to work because it requires a recent version of `matplotlib`.
+  (In particular, older Ubuntu versions may not have a recent version.)
+  If you're having problems with `matplotlib` in this context, you might
+  want to try using the `Anaconda Python distribution
+  <https://store.continuum.io/cshop/anaconda>`_, or switch to :ref:`smc`.
 
 * For hints on viewing an html file created on SMC, see
   :ref:`smc_view_html`. 
