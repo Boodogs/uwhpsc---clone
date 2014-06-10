@@ -18,13 +18,6 @@ Some hints on problems encountered in the :ref:`project`:
   :ref:`animation`.  Note that this also gives hints on using it without
   "installing".  
 
-* Some people using their own computers are having problems getting
-  JSAnimation to work because it requires a recent version of `matplotlib`.
-  (In particular, older Ubuntu versions may not have a recent version.)
-  If you're having problems with `matplotlib` in this context, you might
-  want to try using the `Anaconda Python distribution
-  <https://store.continuum.io/cshop/anaconda>`_, or switch to :ref:`smc`.
-
 * For hints on viewing an html file created on SMC, see
   :ref:`smc_view_html`. 
 
@@ -95,4 +88,22 @@ Some hints on problems encountered in the :ref:`project`:
   function are all the appropriate things for taking a single step from 
   time :math:`t_N` to time :math:`t_{N+1}` and that the `u` array that is
   returned from the routine in one step is the input for the next step.
+
+* Some people using their own computers are having problems getting
+  JSAnimation to work because it requires a recent version of `matplotlib`.
+  (In particular, older Ubuntu versions may not have a recent version.)
+  If you're having problems with `matplotlib` in this context, you might
+  want to try using the `Anaconda Python distribution
+  <https://store.continuum.io/cshop/anaconda>`_, or switch to :ref:`smc`.
+
+* Some people are encountering issues with the 4 *omp parallel sections* all
+  being executed by the same thread,  or by fewer than 4 threads,
+  even when 4 threads are forked. 
+  From the documentation, it is not clear that all implementations of
+  sections will work the same way, and it is possible that if Thread 0, say,
+  finishes its section before other threads have started then it might be 
+  be assigned the next section as well.  So if you print out the results
+  of `omp_get_num_threads` in the `parallel sections` and this is 4, do not
+  worry too much if it seems that the work is not spread properly between
+  the threads.
 
