@@ -95,7 +95,7 @@ Some hints on problems encountered in the :ref:`project`:
             rhs = zeros(n+2)
             for i in range(1,n+1):
                 rhs[i] = 0.5*dtdx2 * u[i-1] + (1 - dtdx2) * u[i] + 0.5*dtdx2 * u[i+1]
-                u[1:-1] = spsolve(A,rhs[1:-1])
+            u[1:-1] = spsolve(A,rhs[1:-1])
 
 
 * Don't forget to use constants like `2.d0` in  Fortran rather than just `2`
