@@ -128,3 +128,8 @@ Some hints on problems encountered in the :ref:`project`:
   worry too much if it seems that the work is not spread properly between
   the threads.
 
+* Update on the last point:  You might also have all 4 threads printing the
+  same `thread_num` if you forget to declare this to be a private variable
+  in the `omp parallel sections` directive --- the value a thread sets might
+  be overwritten by a different thread before it gets to printing it.
+
