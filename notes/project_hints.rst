@@ -54,7 +54,7 @@ Some hints on problems encountered in the :ref:`project`:
 * In the Python notebook for the implicit heat equation solver, 
   sparse matrix notation is used to define the sparse identity matrix
   and the matrices :math:`A = I - \frac{\Delta t}{2} D_2` and
-  :math:`B = I + \frac{\Delta t}{2} D_2` then `rhs = B*i[1:-1]` uses
+  :math:`B = I + \frac{\Delta t}{2} D_2` then `rhs = B*u[1:-1]` uses
   the fact that if `B` is a sparse matrix then this does the matrix-vector
   product efficiently.  In Fortran there's no easy way to do all this with
   sparse matrices, and the intention was to instead just fill things with 
@@ -75,6 +75,27 @@ Some hints on problems encountered in the :ref:`project`:
    the notebook `$UWHPSC/homeworks/project/Heat_Equation.ipynb`,
    and has been fixed there and in the version visible at
    `<http://nbviewer.ipython.org/url/faculty.washington.edu/rjl/notebooks/Heat_Equation.ipynb>`_.
+
+
+* If the discussion above still isn't clear, here's how the Python code ::
+
+        D2 = sparse.spdiags([d1,d0,d1], [-1,0,1],n,n,format='csc') / dx**2
+        I = sparse.eye(n)
+        B = (I + 0.5*dt*D2)
+        for nstep in range(nsteps):
+            rhs = B*u[1:-1]
+            u[1:-1] = spsolve(A,rhs)
+        
+
+  could be rewritten in Python to be more like what's needed in Fortran::
+
+        A = .... # as before
+        dtdx2 = dt/dx**2
+        for nstep in range(nsteps):
+            rhs = zeros(n+2)
+            for i in range(1,n+1):
+                rhs[i] = 0.5*dtdx2 * u[i-1] + (1 - dtdx2) * u[i] + 0.5*dtdx2 * u[i+1]
+                u[1:-1] = spsolve(A,rhs[1:-1])
 
 
 * Don't forget to use constants like `2.d0` in  Fortran rather than just `2`
