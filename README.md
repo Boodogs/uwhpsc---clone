@@ -3,7 +3,7 @@ Repository for University of Washington course on High Performance Scientific
 Computing, taught by Randall J. LeVeque.
 
 The notes can be found at
-http://faculty.washington.edu/rjl/classes/am583s2013/notes/
+http://faculty.washington.edu/rjl/uwhpsc-coursera/index.html
 
 
 Directories:
